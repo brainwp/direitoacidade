@@ -20,13 +20,13 @@ get_header(); ?>
 		</header><!-- .entry-header-->
         
 		<div class="prog">
-			<?php the_field( "1o_dia" ); ?>
+			<?php echo apply_filters('the_title', get_the_field('1o_dia'));?>
 		</div>
 		<div class="prog">
-			<?php the_field( "2o_dia" ); ?>
+			<?php echo apply_filters('the_title', get_the_field('2o_dia'));?>
 		</div>
 		<div class="prog">
-			<?php the_field( "3o_dia" ); ?>
+			<?php echo apply_filters('the_title', get_the_field('3o_dia'));?>
 		</div>
 				
 		<footer class="entry-meta">

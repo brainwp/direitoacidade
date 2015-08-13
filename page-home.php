@@ -20,9 +20,9 @@ get_header(); ?>
     	<div class="homer">            
         	<?php $post = get_post(10);?>
             <h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>"><?php echo qtrans_use($q_config['language'], $post->post_title, true);?></a>
-			</h1>      
-            <?php $content = qtrans_use($q_config['language'], $post->post_content, true); 
+				<a href="<?php the_permalink(); ?>"><?php apply_filters('the_title', $post->post_title);?></a>
+			</h1>
+			<?php $content = apply_filters('the_content', $post->post_content);?>      
  			$trimmed_content = wp_trim_words( $content, 144); ?>
   			<p><?php echo $trimmed_content.'...<a href="'. get_permalink() .'"> [ + ]</a>'; ?></p> <!-- max words -->   
 		</div>

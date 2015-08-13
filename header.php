@@ -40,7 +40,7 @@
 	<?php get_sidebar( 'top' ); ?>
 	</div>
     
-    <a class="home-link" href="<?php qtrans_convertURL( bloginfo('url') ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+    <a class="home-link" href="<?php echo home_url();?>" rel="home">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/logo-eidc.png" width="644" height="184" alt="logotipo do encontro">
 	</a>
     
