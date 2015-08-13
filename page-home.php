@@ -20,7 +20,7 @@ get_header(); ?>
     	<div class="homer">            
         	<?php $post = get_post(10);?>
             <h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>"><?php apply_filters('the_title', $post->post_title);?></a>
+				<a href="<?php the_permalink(); ?>"><?php echo apply_filters('the_title', $post->post_title);?></a>
 			</h1>
 			<?php $content = apply_filters('the_content', $post->post_content);?>      
  			<?php $trimmed_content = wp_trim_words( $content, 144); ?>
