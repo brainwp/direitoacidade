@@ -623,8 +623,8 @@ body {
 .site-main {
 	position: relative;	
 	padding-top:16px;
-    padding-bottom:144px;   /* Height+padding of the footer */
-    height:100%; 
+	padding-bottom:75px;   /* Height+padding of the footer */
+	height:100%; 
 	margin:8px auto;
 	max-width: 1040px;
 	width: 100%;
@@ -999,7 +999,6 @@ ul.nav-menu .focus > ul,
 	font-size:0.9em;
 	text-align: center;
 	width:100%;
-	position:absolute;
     bottom:0;
     height:128px;
     padding:8px 0;
@@ -1149,8 +1148,12 @@ ul.nav-menu .focus > ul,
 	font-size:1.2em;
 }
 .site-contenn .homen {
-	min-height:480px;max-height:480px;height:480px;overflow:hidden;	font-size:0.9em;
-
+	min-height:480px;
+	max-height:480px;
+	height:480px;
+	overflow:hidden;	
+	font-size:0.9em;
+	float: left;
 }
 .site-contenn footer {
 	clear:both;
@@ -1242,7 +1245,6 @@ ul.nav-menu .focus > ul,
 	float:left;
 	display:block;
 	border:1px solid  #EE8D00;
-	border-bottom:0 none !important;
 	background:#FAFAFA /*#FBF7F0*/;
 	font-size:1em;
 }
@@ -1563,6 +1565,11 @@ li.bbp-topic-freshness {
 	border: none;
 	margin-right: 20px;
 	padding: 0;
+}
+
+.page_nav {
+	margin: 10px auto;
+	text-align: center;
 }
 
 /* Mediaelements */
