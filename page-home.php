@@ -23,7 +23,7 @@ get_header(); ?>
 				<a href="<?php the_permalink(); ?>"><?php apply_filters('the_title', $post->post_title);?></a>
 			</h1>
 			<?php $content = apply_filters('the_content', $post->post_content);?>      
- 			$trimmed_content = wp_trim_words( $content, 144); ?>
+ 			<?php $trimmed_content = wp_trim_words( $content, 144); ?>
   			<p><?php echo $trimmed_content.'...<a href="'. get_permalink() .'"> [ + ]</a>'; ?></p> <!-- max words -->   
 		</div>
     
