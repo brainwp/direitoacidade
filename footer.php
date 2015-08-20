@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="site-info">
-    	<?php _e("Encontro Internacional sobre o Direito à Cidade"); ?>	
+    	<?php bloginfo( 'name' ); ?>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 <?php wp_footer(); ?>

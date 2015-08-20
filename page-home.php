@@ -14,61 +14,25 @@ get_header(); ?>
 	<div style="clear: both;"></div>
     <!-- END SLIDER -->
     
-    <!-- 3 COLUNAS -->
+<!-- 3 COLUNAS -->
     <div class="homest">
-    <!-- COLUNA Esquerda: pagina homeleft-->
+
+	<!-- COLUNA Esquerda-->
     	<div class="homer">            
-        	<?php $post = get_post(10);?>
-            <h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>"><?php echo apply_filters('the_title', $post->post_title);?></a>
-			</h1>
-			<?php $content = apply_filters('the_content', $post->post_content);?>      
- 			<?php $trimmed_content = wp_trim_words( $content, 144); ?>
-  			<p><?php echo $trimmed_content.'...<a href="'. get_permalink() .'"> [ + ]</a>'; ?></p> <!-- max words -->   
-		</div>
-    
-     <!-- COLUNA Meio: Noticia -->
-    	<div class="homemiddle">
-         	<?php query_posts('posts_per_page=1'); ?>
-			<?php if ( have_posts() ) : the_post(); ?>      
-			<article id="post-<?php the_ID(); ?>" class="homer">
-				<header class="entry-header">
-				<?php if ( has_post_thumbnail() && ! post_password_required() && ! is_attachment() ) : ?>
-				<div class="entry-thumbnail">
-				<?php the_post_thumbnail(); ?>
-				</div>
-				<?php endif; ?>
-
-				<h1 class="entry-title">
-					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-				</h1>
-
-				<div class="entry-meta">
-					<?php // direitoacidade_entry_meta(); ?>
-				</div><!-- .entry-meta -->
-				</header><!-- .entry-header -->
-
-				<div class="entry-summary">
-					<?php the_excerpt(); ?>
-				</div>
-
-				<footer class="entry-meta">
-					<?php if ( comments_open()) : ?>
-					<div class="comments-link">
-					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Deixe um comentário', 'direitoacidade' ) . '</span>', __( 'Um comentário até agora', 'direitoacidade' ), __( 'Ver todos os % comentários', 'direitoacidade' ) ); ?>
-					</div><!-- .comments-link -->
-					<?php endif; ?>
-				</footer><!-- .entry-meta -->
-			</article><!-- #post -->
-			<?php endif; ?>  
+		<?php get_sidebar( 'homeesq' ); ?>
+	</div>
+	<!-- COLUNA Meio -->
+    	<div class="homecenter">
+        	<?php get_sidebar( 'homemiddle' ); ?>	
         </div>
         
-	<!-- COLUNA Direita: Calendario -->
-        <div class="homecal">
-			<?php get_sidebar( 'homedir' ); ?>
-		</div>
+	<!-- COLUNA Direita -->
+        <div class="homel">
+		<?php get_sidebar( 'homedir' ); ?>
+	</div>
         
-    </div> <!-- FIM 3 COLUNAS -->
+    </div>
+<!-- FIM 3 COLUNAS -->
     
 </div><!-- #content -->
 

@@ -678,11 +678,12 @@ body {
 	width:260px;
 }
 .topper aside {
-	margin:6px 0;
-	padding:4px;
-	text-align:right;
-	min-height:40px;
-	float:right;
+	margin: 2px 0;
+	padding: 4px;
+	text-align: right;
+	min-height: 25px;
+	float: right;
+	clear: both;
 }
 .topper b {
 	font-family:"interstate-bold";
@@ -1238,7 +1239,7 @@ ul.nav-menu .focus > ul,
 	font-family:'interstate';
 }
 .homer {
-	max-width: 348px;
+	max-width: 337px;
 /*	max-height:400px;overflow:hidden;*/
 	margin:4px;
 	padding:16px;
@@ -1248,6 +1249,30 @@ ul.nav-menu .focus > ul,
 	background:#FAFAFA /*#FBF7F0*/;
 	font-size:1em;
 }
+
+.homecenter {
+	max-width: 337px;
+	margin:4px;
+	padding:16px;
+	float:left;
+	display:block;
+	border:1px solid  #EE8D00;
+	background:#FAFAFA /*#FBF7F0*/;
+	font-size:1em;
+}
+
+.homel {
+	max-width: 337px;
+	margin:4px;
+	padding:16px;
+	float:left;
+	display:block;
+	border:1px solid  #EE8D00;
+	background:#FAFAFA /*#FBF7F0*/;
+	font-size:1em;
+}
+
+
 .homer .entry-header, .homer .entry-title {
 	border-bottom:1px dashed  #EE8D00;
 	padding-bottom:8px;

@@ -213,7 +213,7 @@ function direitoacidade_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Single Widget Area', 'direitoacidade' ),
-		'id'            => 'sidebar-3',
+		'id'            => 'sidebar-2',
 		'description'   => __( 'sidebar nos posts and pages', 'direitoacidade' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -222,8 +222,17 @@ function direitoacidade_widgets_init() {
 	) );	
 	register_sidebar( array(
 		'name'          => __( 'Home Left', 'direitoacidade' ),
-		'id'            => 'sidebar-4',
+		'id'            => 'sidebar-3',
 		'description'   => __( 'Em Homepage Esquerda', 'direitoacidade' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Home Middle', 'direitoacidade' ),
+		'id'            => 'sidebar-4',
+		'description'   => __( 'Em Homepage Centro', 'direitoacidade' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',

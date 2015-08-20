@@ -40,11 +40,11 @@
 	<?php get_sidebar( 'top' ); ?>
 	</div>
     
-    <a class="home-link" href="<?php echo home_url();?>" rel="home">
+    <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/logo-eidc.png" width="644" height="184" alt="logotipo do encontro">
 	</a>
     
-</header> 	
+</header>
     
     <div id="navbar" class="navbar">
 		<nav id="site-navigation" class="navigation main-navigation" role="navigation">
