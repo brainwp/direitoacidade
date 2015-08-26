@@ -286,7 +286,7 @@ input[type="radio"] {
 input[type="search"] {
 	-webkit-appearance: textfield;
 	padding-right: 2px; /* Don't cut off the webkit search cancel button */
-	min-width:240px;max-width: 248px;
+	min-width: 145px;
 }
 input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
@@ -467,7 +467,7 @@ input[type="reset"] {
 	display: inline-block;
 	padding: 11px 24px 10px;
 	text-decoration: none;
-	max-width:128px !important;
+	width:auto ;
 }
 #comments .comment-form input[type="submit"] {
 	min-width:160px; max-width:240px !important;
@@ -770,7 +770,7 @@ body {
 	top:-200px;
 	left:54%;
 	background:#EE8D00;
-	width:168px;
+	width:220px;
 	padding:4px;
 	height:200px;
 	-webkit-transition-duration: 0.3s;
@@ -965,11 +965,10 @@ ul.nav-menu .focus > ul,
 	margin:0 80px 0 0;
 }
 .site-header .search-form, .navbar .search-form, .topper .search-form {
-	position: absolute;
-	right: 20px;
-	top: 1px;
+    float: right;
+    max-width: 145px;
 }
-.site-header .search-field, .navbar .search-field, .topper .search-form {
+.site-header .search-field, .navbar .search-field {
 	background-color: transparent;
 	background-image: url(images/search-icon.png);
 	background-position: 5px center;
@@ -990,7 +989,7 @@ ul.nav-menu .focus > ul,
 	border: 2px solid #c3c0ab;
 	cursor: text;
 	outline: 0;
-	width: 230px;
+	max-width: 145px !important;
 }
 
 /** Footer ---------------------------------------------- */
@@ -1091,6 +1090,7 @@ ul.nav-menu .focus > ul,
 	width: 100%;
 	background-color: #4D103B;
 	border-top:1px solid #EE8D00;
+	text-align: center;
 	/*clear:both;*/
 }
 #wpstats {
@@ -1192,7 +1192,7 @@ ul.nav-menu .focus > ul,
 }
 .sidebar .entry-header,.sidebar .entry-content,.sidebar .entry-summary,.sidebar .entry-meta {
 	max-width: 1040px;
-	padding: 0 376px 0 60px;
+	padding: 0 60px 0 60px;
 }
 
 /* HomePage */
@@ -1234,10 +1234,44 @@ ul.nav-menu .focus > ul,
 	background: linear-gradient(180deg, rgb(199, 194, 197) 9%, rgb(77, 16, 59) 63%);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c2c5', endColorstr='#4D103B',GradientType=0 )";
 }
+
+.tribe-events-list-widget {
+	width:100%;
+	float:right;
+	display:block;/**/
+	border:2px solid #EE8D00;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	margin-top:8px;
+	margin-right:8px;
+		background: rgb(199, 194, 197);
+	background: -moz-linear-gradient(90deg, rgb(199, 194, 197) 9%, rgb(77, 16, 59) 63%);
+	background: -webkit-linear-gradient(90deg, rgb(199, 194, 197) 9%, rgb(77, 16, 59) 63%);
+	background: -o-linear-gradient(90deg, rgb(199, 194, 197) 9%, rgb(77, 16, 59) 63%);
+	background: -ms-linear-gradient(90deg, rgb(199, 194, 197) 9%, rgb(77, 16, 59) 63%);
+	background: linear-gradient(180deg, rgb(199, 194, 197) 9%, rgb(77, 16, 59) 63%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c2c5', endColorstr='#4D103B',GradientType=0 )";
+}
+
 .homecal .widget .widget-title {
 	font-style:normal !important;
 	font-family:'interstate';
 }
+
+.date-start {
+	float: left;
+	clear: both;
+}
+
+.tribe-events-list-widget ol li {
+    margin-bottom: 10px;
+}
+
+.datepicker.dropdown-menu {
+    z-index: 9999999 !important;
+}
+
 .homer {
 	max-width: 337px;
 /*	max-height:400px;overflow:hidden;*/
@@ -2165,7 +2199,7 @@ li.bbp-topic-freshness {
 }
 .sidebar .paging-navigation .nav-links {
 	max-width: 1040px;
-	padding: 0 376px 0 60px;
+	padding: 0 60px 0 60px;
 }
 .paging-navigation .nav-next {
 	/*padding: 4px 0;*/
@@ -2212,7 +2246,7 @@ li.bbp-topic-freshness {
 	max-width: 1040px;
 }
 .sidebar .post-navigation .nav-links {
-	padding: 0 376px 0 60px;
+	padding: 0 60px 0 60px;
 }
 .post-navigation a[rel="next"] {
 	float: right;
@@ -2229,7 +2263,7 @@ li.bbp-topic-freshness {
 }
 .author.sidebar .author-info {
 	max-width: 1040px;
-	padding: 30px 376px 10px 60px;
+	padding: 30px 60px 10px 60px;
 }
 .single .author-info {
 	padding: 50px 0 0;
@@ -2302,7 +2336,7 @@ li.bbp-topic-freshness {
 .sidebar .page-content {
 	margin: 0 auto;
 	max-width: 1040px;
-	padding: 40px 376px 40px 60px;
+	padding: 40px 60px 40px 60px;
 }
 
 /** 404 ------------------------------------ */
@@ -2365,7 +2399,7 @@ li.bbp-topic-freshness {
 .sidebar .comment-respond .comment-form {
 	max-width: 1040px;
 	padding-left: 60px;
-	padding-right: 376px;
+	padding-right: 60px;
 }
 .comments-title {
 }
@@ -2569,7 +2603,7 @@ li.bbp-topic-freshness {
 }
 .sidebar .no-comments {
 	padding-left: 60px;
-	padding-right: 376px;
+	padding-right: 60px;
 }
 
 /** Multisite --------------------------- */
